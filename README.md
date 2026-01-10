@@ -1,6 +1,6 @@
 # Insurance Medical Charges — End‑to‑End ML (Regression)
 
-This repo is a small but complete Machine Learning project: it goes from raw data →
+This repo is a learning but a complete Machine Learning project: it goes from raw data →
 data validation + feature engineering → model training/evaluation → **FastAPI** serving →
 a simple **Streamlit** UI.
 
@@ -103,11 +103,3 @@ make api
 make web
 make test
 ```
-
----
-
-## Notes / limitations
-
-* This is a learning project. The model is trained on a small public dataset.
-* Predictions are only reliable inside the feature ranges seen in the dataset.
-* Do **not** load untrusted `.joblib` model files in production.
