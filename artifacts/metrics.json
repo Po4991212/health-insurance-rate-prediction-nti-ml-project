@@ -1,20 +1,25 @@
 {
   "results": {
     "linear_regression": {
-      "MAE": 2762.7094844229723,
-      "MSE": 20700442.40884894,
+      "MAE": 2762.7094844229696,
+      "MSE": 20700442.408848945,
       "R2": 0.8666627275473369
     },
     "ridge": {
-      "MAE": 2767.2304427217823,
-      "MSE": 20624971.855319157,
-      "R2": 0.8671488542474045
+      "MAE": 2767.230442721798,
+      "MSE": 20624971.855319094,
+      "R2": 0.867148854247405
     },
     "random_forest": {
       "MAE": 2430.3534359901582,
-      "MSE": 19754043.292543944,
+      "MSE": 19754043.292543937,
       "R2": 0.8727587458993783
     }
   },
-  "best_model": "random_forest"
+  "best_model": "random_forest",
+  "config": {
+    "data_path": "C:\\Users\\Roger\\Downloads\\ml_insurance_project\\data\\insurance.csv",
+    "test_size": 0.2,
+    "random_state": 42
+  }
 }
