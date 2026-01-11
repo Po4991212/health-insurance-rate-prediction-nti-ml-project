@@ -3,22 +3,59 @@
     "linear_regression": {
       "MAE": 2762.7094844229696,
       "MSE": 20700442.408848945,
-      "R2": 0.8666627275473369
+      "R2": 0.8666627275473369,
+      "CV_MAE_mean": 2888.9813804796204,
+      "CV_MAE_std": 205.2381613734561,
+      "CV_R2_mean": 0.8395615135507691,
+      "CV_R2_std": 0.031895069654679496
     },
     "ridge": {
       "MAE": 2767.230442721798,
       "MSE": 20624971.855319094,
-      "R2": 0.867148854247405
+      "R2": 0.867148854247405,
+      "CV_MAE_mean": 2889.4399496974156,
+      "CV_MAE_std": 202.65077153704075,
+      "CV_R2_mean": 0.8395939947212174,
+      "CV_R2_std": 0.031785355359284305
+    },
+    "linear_log": {
+      "MAE": 2506.1598207172597,
+      "MSE": 25140849.44279176,
+      "R2": 0.8380608382354225,
+      "CV_MAE_mean": 2830.611116988497,
+      "CV_MAE_std": 351.72194375942877,
+      "CV_R2_mean": 0.7937125605495379,
+      "CV_R2_std": 0.03962744714433082
+    },
+    "ridge_log": {
+      "MAE": 2485.4426562035223,
+      "MSE": 24840858.601302866,
+      "R2": 0.8399931621816881,
+      "CV_MAE_mean": 2815.384919599138,
+      "CV_MAE_std": 341.52736315038936,
+      "CV_R2_mean": 0.794853959469187,
+      "CV_R2_std": 0.0388362519232101
     },
     "random_forest": {
       "MAE": 2430.3534359901582,
       "MSE": 19754043.292543937,
-      "R2": 0.8727587458993783
+      "R2": 0.8727587458993783,
+      "CV_MAE_mean": 2682.3116649293806,
+      "CV_MAE_std": 199.81645224733782,
+      "CV_R2_mean": 0.8427037550252472,
+      "CV_R2_std": 0.028664589048001957
     }
   },
   "best_model": "random_forest",
+  "selection_rule": "best CV_R2_mean, tie-breaker lowest CV_MAE_mean",
+  "error_analysis": {
+    "MAE_by_smoker": {
+      "no": 2370.5112647754104,
+      "yes": 2667.5057441374915
+    }
+  },
   "config": {
-    "data_path": "C:\\Users\\Roger\\Downloads\\ml_insurance_project\\data\\insurance.csv",
+    "data_path": "C:\\Users\\Roger\\OneDrive\\Projects\\ml_insurance_project\\data\\insurance.csv",
     "test_size": 0.2,
     "random_state": 42
   }

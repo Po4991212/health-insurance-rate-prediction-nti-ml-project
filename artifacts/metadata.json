@@ -1,0 +1,16 @@
+{
+  "trained_at_utc": "2026-01-11T17:50:47.490572Z",
+  "sklearn_version": "1.8.0",
+  "pandas_version": "2.3.3",
+  "numpy_version": "2.4.1",
+  "features": [
+    "age",
+    "sex",
+    "bmi",
+    "children",
+    "smoker",
+    "region"
+  ],
+  "target": "charges",
+  "best_model": "random_forest"
+}

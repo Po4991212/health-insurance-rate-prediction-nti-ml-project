@@ -2,7 +2,7 @@ import requests
 import streamlit as st
 
 st.set_page_config(page_title="Insurance Charges Predictor", layout="centered")
-st.title("Insurance Charges Predictor")
+st.title("Medical Insurance Charges Predictor")
 st.write("Nhập thông tin và bấm **Dự đoán** để nhận dự đoán chi phí y tế (charges).")
 
 API_URL = st.text_input("API URL", value="http://127.0.0.1:8000/predict")
